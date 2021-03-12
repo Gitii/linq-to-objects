@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "ES2015",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true
+    },
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}
