@@ -2,58 +2,33 @@
     "name": "ts-linq-to-objects",
     "version": "1.5.0",
     "description": "Linq for javascript written in Typescript",
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Gitii/linq-to-objects.git"
     },
-    "keywords": [
-        "linq",
-        "array",
-        "addRange",
-        "aggregate",
-        "average",
-        "clear",
-        "distinct",
-        "firstOrDefault",
-        "insertAt",
-        "insertRangeAt",
-        "getRange",
-        "groupBy",
-        "innerJoin",
-        "lastOrDefault",
-        "orderBy",
-        "orderByDescending",
-        "removeAll",
-        "removeAt",
-        "removeRange",
-        "selectNew",
-        "skipWhile",
-        "takeWhile",
-        "union",
-        "where",
-        "front-end",
-        "back-end"
-    ],
+    "bugs": {
+        "url": "https://github.com/Gitii/linq-to-objects/issues"
+    },
+    "homepage": "https://github.com/Gitii/linq-to-objects",
     "author": "gitii",
+    "main": "./dist/index.js",
+    "scripts": {
+        "build": "yarn generate:index && yarn build:js",
+        "build:clean": "yarn rimraf ./dist && mkdir ./dist",
+        "build:js": "tsc -b",
+        "build:watch": "yarn build --watch",
+        "generate:index": "bash ./generate_index.sh"
+    },
     "maintainers": [
         {
             "name": "gitii"
         }
     ],
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/Gitii/linq-to-objects/issues"
-    },
-    "homepage": "https://github.com/Gitii/linq-to-objects",
-    "devDependencies": {
-        "typescript": "^4.2.3"
-    },
+    "types": "./dist/index.d.ts",
     "dependencies": {},
-    "scripts": {
-        "generate:index": "bash ./generate_index.sh",
-        "build": "tsc -p .",
-        "build:watch": "yarn build --watch"
+    "devDependencies": {
+        "rimraf": "^3.0.2",
+        "typescript": "^4.2.3"
     }
 }
