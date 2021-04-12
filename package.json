@@ -18,7 +18,7 @@
         "build:clean": "yarn rimraf ./dist && mkdir ./dist",
         "build:js": "tsc -b",
         "build:watch": "yarn build --watch",
-        "generate:index": "bash ./generate_index.sh"
+        "generate:index": "sh ./generate_index.sh"
     },
     "maintainers": [
         {
