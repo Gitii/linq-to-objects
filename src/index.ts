@@ -17,6 +17,8 @@ export * from "./count";
 export * from "./where";
 export * from "./skip";
 export * from "./firstOrDefault";
+export * from "./minBy";
+export * from "./maxBy";
 export * from "./average";
 export * from "./sum";
 export * from "./index";
