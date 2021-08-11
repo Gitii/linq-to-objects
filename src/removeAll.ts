@@ -17,5 +17,3 @@ export function removeAll<T>(this: T[], predicate: (item: T, index: number) => b
     this.addRange(arr);
     return nb;
 }
-
-Array.prototype.removeAll = removeAll;

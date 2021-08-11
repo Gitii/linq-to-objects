@@ -11,5 +11,3 @@ export function average<T>(this: T[], selector: (item: T) => number): number {
 
     return this.sum(selector) / this.length;
 }
-
-Array.prototype.average = average;

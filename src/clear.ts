@@ -9,5 +9,3 @@ export function clear<T>(this: T[]): T[] {
     this.length = 0;
     return this;
 }
-
-Array.prototype.clear = clear;

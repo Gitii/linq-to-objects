@@ -12,5 +12,3 @@ export function max<T>(this: T[], selector: (item: T) => number): number {
         return Math.max(a, selector(b));
     }, 0);
 }
-
-Array.prototype.max = max;

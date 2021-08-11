@@ -12,5 +12,3 @@ export function min<T>(this: T[], selector: (item: T) => number): number {
         return Math.min(a, selector(b));
     }, 0);
 }
-
-Array.prototype.min = min;

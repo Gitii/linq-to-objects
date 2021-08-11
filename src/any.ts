@@ -5,5 +5,3 @@ declare global {
 }
 
 export const any = Array.prototype.some;
-
-Array.prototype.any = Array.prototype.some;

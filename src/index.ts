@@ -1,3 +1,29 @@
+import { add } from "./add";
+import { addRange } from "./addRange";
+import { aggregate } from "./aggregate";
+import { all } from "./all";
+import { any } from "./any";
+import { average } from "./average";
+import { clear } from "./clear";
+import { count } from "./count";
+import { first } from "./first";
+import { firstOrDefault } from "./firstOrDefault";
+import { last } from "./last";
+import { lastOrDefault } from "./lastOrDefault";
+import { max } from "./max";
+import { maxBy } from "./maxBy";
+import { min } from "./min";
+import { minBy } from "./minBy";
+import { extendPrototypeProperty, extendPrototypePropertyUnsafe } from "./prototype";
+import { removeAll } from "./removeAll";
+import { skip } from "./skip";
+import { skipWhile } from "./skipWhile";
+import { sum } from "./sum";
+import { take } from "./take";
+import { takeWhile } from "./takeWhile";
+import { where } from "./where";
+import { whileIndex } from "./whileIndex";
+
 export * from "./addRange";
 export * from "./max";
 export * from "./skipWhile";
@@ -23,3 +49,32 @@ export * from "./average";
 export * from "./sum";
 export * from "./index";
 export * from "./add";
+
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types,max-lines-per-function,@typescript-eslint/explicit-function-return-type
+export function extendPrototype() {
+    extendPrototypeProperty("add", add);
+    extendPrototypeProperty("addRange", addRange);
+    extendPrototypeProperty("aggregate", aggregate);
+    extendPrototypePropertyUnsafe("all", all);
+    extendPrototypeProperty("any", any);
+    extendPrototypeProperty("average", average);
+    extendPrototypeProperty("clear", clear);
+    extendPrototypeProperty("count", count);
+    extendPrototypeProperty("first", first);
+    extendPrototypeProperty("firstOrDefault", firstOrDefault);
+    extendPrototypeProperty("last", last);
+    extendPrototypeProperty("lastOrDefault", lastOrDefault);
+    extendPrototypeProperty("max", max);
+    extendPrototypeProperty("maxBy", maxBy);
+    extendPrototypeProperty("min", min);
+    extendPrototypeProperty("minBy", minBy);
+    extendPrototypeProperty("removeAll", removeAll);
+    extendPrototypeProperty("skip", skip);
+    extendPrototypeProperty("skipWhile", skipWhile);
+    extendPrototypeProperty("sum", sum);
+    extendPrototypeProperty("take", take);
+    extendPrototypeProperty("takeWhile", takeWhile);
+    extendPrototypeProperty("where", where);
+    extendPrototypeProperty("whileIndex", whileIndex);
+}
+

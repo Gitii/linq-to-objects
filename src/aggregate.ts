@@ -5,5 +5,3 @@ declare global {
 }
 
 export const aggregate = Array.prototype.reduce;
-
-Array.prototype.aggregate = Array.prototype.reduce;

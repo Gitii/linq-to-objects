@@ -13,5 +13,3 @@ export function whileIndex<T>(this: T[], predicate: (item: T, index: number) => 
     }
     return len - 1;
 }
-
-Array.prototype.whileIndex = whileIndex;

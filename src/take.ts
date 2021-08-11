@@ -10,5 +10,3 @@ export function take<T>(this: T[], num: number): T[] {
     }
     return this.slice(0, num);
 }
-
-Array.prototype.take = take;

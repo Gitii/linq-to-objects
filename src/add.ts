@@ -10,5 +10,3 @@ export function add<T>(this: T[], ...rest: T[]): T[] {
     }
     return this;
 }
-
-Array.prototype.add = add;

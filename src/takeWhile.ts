@@ -7,5 +7,3 @@ declare global {
 export function takeWhile<T>(this: T[], predicate: (item: T, index: number) => boolean): T[] {
     return this.slice(0, this.whileIndex(predicate));
 }
-
-Array.prototype.takeWhile = takeWhile;

@@ -14,5 +14,3 @@ export function count<T>(this: T[], predicate: ((item: T, index: number) => bool
     }
     return nb;
 }
-
-Array.prototype.count = count;

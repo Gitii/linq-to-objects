@@ -6,7 +6,7 @@ declare global {
     }
 }
 
-export default function lastOrDefault<T, U>(
+export function lastOrDefault<T, U>(
     this: T[],
     predicate: (item: T, index: number) => boolean,
     defaultValue: U | null = null
@@ -28,5 +28,3 @@ export default function lastOrDefault<T, U>(
 
     return this[0];
 }
-
-Array.prototype.lastOrDefault = lastOrDefault;

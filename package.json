@@ -14,11 +14,10 @@
     "author": "gitii",
     "main": "./dist/index.js",
     "scripts": {
-        "build": "yarn generate:index && yarn build:js",
+        "build": "yarn build:js",
         "build:clean": "yarn rimraf ./dist && mkdir ./dist",
         "build:js": "tsc -b",
-        "build:watch": "yarn build --watch",
-        "generate:index": "sh ./generate_index.sh"
+        "build:watch": "yarn build --watch"
     },
     "maintainers": [
         {
@@ -29,6 +28,6 @@
     "dependencies": {},
     "devDependencies": {
         "rimraf": "^3.0.2",
-        "typescript": "^4.2.3"
+        "typescript": "^4.3.5"
     }
 }

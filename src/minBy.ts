@@ -18,5 +18,3 @@ export function minBy<T>(this: T[], selector: (item: T) => number): T | undefine
         throw new Error("Array.minBy: minimum value could not be found!");
     }
 }
-
-Array.prototype.minBy = minBy;

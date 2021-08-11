@@ -18,5 +18,3 @@ export function maxBy<T>(this: T[], selector: (item: T) => number): T | undefine
         throw new Error("Array.maxBy: maximum value could not be found!");
     }
 }
-
-Array.prototype.maxBy = maxBy;

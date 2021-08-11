@@ -4,7 +4,7 @@ declare global {
     }
 }
 
-export default function first<T>(this: T[], predicate: (item: T, index: number) => boolean): T {
+export function first<T>(this: T[], predicate: (item: T, index: number) => boolean): T {
     if (this.length === 0) {
         throw new Error("Array.first: array is empty!");
     }
@@ -22,5 +22,3 @@ export default function first<T>(this: T[], predicate: (item: T, index: number) 
 
     return this[0];
 }
-
-Array.prototype.first = first;

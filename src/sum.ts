@@ -11,5 +11,3 @@ export function sum<T>(this: T[], selector: (item: T) => number): number {
 
     return this.reduce((x, y) => x + selector(y), 0);
 }
-
-Array.prototype.sum = sum;
